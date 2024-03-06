@@ -36,7 +36,7 @@ jobs:
       version: 6.0.x
 
   - task: UseDotNet@2
-    displayName: 'Use .NET 7.0 SDK'
+    displayName: 'Use .NET 8.0 SDK'
     inputs:
       packageType: sdk
       useGlobalJson: true
@@ -82,7 +82,7 @@ jobs:
       version: 6.0.x
 
   - task: UseDotNet@2
-    displayName: 'Use .NET 7.0 SDK'
+    displayName: 'Use .NET 8.0 SDK'
     inputs:
       packageType: sdk
       useGlobalJson: true
@@ -162,7 +162,7 @@ jobs:
       version: 6.0.x
 
   - task: UseDotNet@2
-    displayName: 'Use .NET 7.0 SDK'
+    displayName: 'Use .NET 8.0 SDK'
     inputs:
       packageType: sdk
       useGlobalJson: true
@@ -171,7 +171,7 @@ jobs:
     displayName: 'Install Workloads'
     inputs:
       script: |
-       dotnet workload install android ios wasm-tools wasm-experimental
+       dotnet workload install android ios tvos wasm-tools wasm-experimental
 
   - task: PowerShell@2
     displayName: 'Install Tizen Workload'
